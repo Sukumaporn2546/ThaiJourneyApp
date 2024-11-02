@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:thai_journey_app/Provider/favourite_provider.dart';
-import 'package:thai_journey_app/screens/suma_home_screen.dart';
+import 'package:thai_journey_app/screens/home_screen.dart';
 
 import 'screens/favourite_screen.dart';
 

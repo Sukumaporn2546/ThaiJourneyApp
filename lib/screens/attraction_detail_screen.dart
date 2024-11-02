@@ -29,29 +29,6 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
     });
   }
 
-  // static const String _apiKey =
-  //     'GmMOh4APVrv7DqIFggy7F7GZxEjdLfDwePs7zNht1ifInSsg5L97yG0M3i(aT4TkgynD5hwJ501h2TN9OEkd1mG=====2';
-
-  // Map<String, String> headers = {
-  //   "Content-Type": "application/json",
-  //   "Accept-Language": "th",
-  //   'Authorization': 'Bearer ${_apiKey}',
-  // };
-
-  // Future<void> _fectAttractionDetail() async {
-  //   final String _baseUrl =
-  //       'https://tatapi.tourismthailand.org/tatapi/v5/attraction/${widget.place_id}';
-
-  //   final response = await http.get(Uri.parse(_baseUrl), headers: headers);
-  //   if (response.statusCode == 200) {
-  //     setState(() {
-  //       _attractionDetail = json.decode(response.body);
-  //     });
-  //   } else {
-  //     print('Error: ${response.statusCode}');
-  //   }
-  // }
-
   String PrintDetail() {
     String allDetail = "";
     String intro =
@@ -95,13 +72,6 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
                       fit: BoxFit.cover,
                     );
                   }),
-                  // Image.asset(
-                  //   'assets/WatPhraKaew.jpg',
-                  //   width: double.infinity,
-                  //   fit: BoxFit.cover,
-                  //   height: MediaQuery.of(context).size.height * 0.5,
-                  // ),
-                  //? Test Button
                   Padding(
                     padding: EdgeInsets.all(20),
                     child: Row(
@@ -225,19 +195,6 @@ class _AttractionDetailScreenState extends State<AttractionDetailScreen> {
                   ),
                 ],
               ),
-
-        // bottomNavigationBar: BottomNavigationBar(
-        //   items: [
-        //     BottomNavigationBarItem(
-        //       icon: Icon(Icons.home),
-        //       label: 'Home',
-        //     ),
-        //     BottomNavigationBarItem(
-        //       icon: Icon(Icons.favorite),
-        //       label: 'Love',
-        //     ),
-        //   ],
-        // ),
       ),
     );
   }

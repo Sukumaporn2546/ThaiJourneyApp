@@ -3,13 +3,9 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:thai_journey_app/Provider/favourite_provider.dart';
 import 'package:thai_journey_app/model/Provinces.dart';
-import 'package:thai_journey_app/screens/nack_place_search_screen.dart';
-import 'package:thai_journey_app/screens/suma_attraction_detail_screen.dart';
+import 'package:thai_journey_app/screens/attraction_detail_screen.dart';
+import 'package:thai_journey_app/screens/place_search_screen.dart';
 import 'package:thai_journey_app/service/home_placesearch_api_service.dart';
-
-// import 'package:project_mobileapp/model/provinces.dart';
-// import '../screens/attraction_provinces.dart';
-// import '../service/place_service.dart';
 
 class HomeScreen1 extends StatefulWidget {
   const HomeScreen1({super.key});
@@ -21,10 +17,8 @@ class HomeScreen1 extends StatefulWidget {
 class _SearchScreenState extends State<HomeScreen1> {
   final controller = TextEditingController();
   final HomeApiService homeApiService = HomeApiService();
-  // final AttractionService attractionService = AttractionService();
 
   List<Provinces> provinces = allProvinces;
-  // List<dynamic> attractions = [];
   Map<String, dynamic>? _homeSearch;
   bool isLoading = true;
   int randomIndex = 0;
@@ -210,14 +204,14 @@ class _SearchScreenState extends State<HomeScreen1> {
                           _homeSearch!['result'][randomIndex]['place_name'],
                           overflow: TextOverflow.ellipsis,
                           maxLines: 1,
-                          style: TextStyle(
+                          style: const TextStyle(
                               fontSize: 18, fontWeight: FontWeight.bold),
                         ),
                       ),
                       Text(
                           _homeSearch!['result'][randomIndex]['location']
                               ['province'],
-                          style: TextStyle(fontSize: 16)),
+                          style: const TextStyle(fontSize: 16)),
                     ],
                   ),
                   InkWell(

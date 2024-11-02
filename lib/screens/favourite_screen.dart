@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:thai_journey_app/Provider/favourite_provider.dart';
-import 'package:thai_journey_app/screens/suma_attraction_detail_screen.dart';
+import 'package:thai_journey_app/screens/attraction_detail_screen.dart';
 import 'package:thai_journey_app/service/favourite_service.dart';
 
 class FavouriteScreen extends StatefulWidget {

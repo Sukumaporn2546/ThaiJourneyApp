@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:thai_journey_app/screens/suma_attraction_detail_screen.dart';
+import 'package:thai_journey_app/screens/attraction_detail_screen.dart';
 import 'package:thai_journey_app/service/place_search_api_service.dart';
 
 class PlaceSearchScreen extends StatefulWidget {
@@ -27,20 +27,6 @@ class _PlaceSearchScreenState extends State<PlaceSearchScreen> {
       _placeSearch = response;
     });
   }
-
-  // Future<void> _fetchPlaceSearchs() async {
-  //   final String _baseUrl =
-  //       'https://tatapi.tourismthailand.org/tatapi/v5/places/search?provincename=${widget.provinceName}&categorycodes=ATTRACTION';
-
-  //   final response = await http.get(Uri.parse(_baseUrl), headers: headers);
-  //   if (response.statusCode == 200) {
-  //     setState(() {
-  //       _placeSearch = json.decode(response.body);
-  //     });
-  //   } else {
-  //     print('Error: ${response.statusCode}');
-  //   }
-  // }
 
   @override
   Widget build(BuildContext context) {

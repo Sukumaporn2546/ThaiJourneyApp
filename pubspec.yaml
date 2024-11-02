@@ -36,11 +36,11 @@ dependencies:
   cupertino_icons: ^1.0.6
   http: ^1.2.2
   provider: ^6.1.2
-  mockito: ^5.4.4
-  #build_runner: ^2.4.13
 
 dev_dependencies:
   flutter_test:
+    sdk: flutter
+  integration_test:
     sdk: flutter
 
   # The "flutter_lints" package below contains a set of recommended lints to
@@ -49,7 +49,6 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^3.0.0
-  test: ^1.25.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -63,9 +62,9 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assests/logo.png
-    - assests/no.jpg
-    - assests/nophoto.png
+    - assets/logo.png
+    - assets/no.jpg
+    - assets/nophoto.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
