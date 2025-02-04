@@ -15,3 +15,7 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 "# ThaiJourneyApp" 
+
+## Presentation about this project
+
+- [ThaiJourneyApp Presentation](https://www.canva.com/design/DAGTSZk5xRQ/WRacozIvnmLr4PTKhRue1Q/edit?utm_content=DAGTSZk5xRQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
